@@ -52,5 +52,5 @@ production:
   encoding: unicode
   database: ircbotadmin_production
   pool: 5
-  username: ezfoxie
-  password:
+  username: ezruby
+  password: ruby04
