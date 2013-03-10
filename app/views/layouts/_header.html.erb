@@ -1,0 +1,38 @@
+<header class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "EzIRC BOT", root_url, class: "brand" %>
+      <nav>
+        <ul class="nav pull-right">
+          <li><%= link_to raw("<i class='icon-cog navicon'></i> Bots"), '#' %></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="icon-fire navicon"></i> Plugins
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "New", '#' %></li>
+              <li><%= link_to "Available", '#' %></li>
+              <li><%= link_to "In Use", '#' %></li>
+              <li class="divider"></li>
+              <li><%= link_to "Request Plugin", '#' %></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="icon-user navicon"></i> Account
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Show Profile", '#' %></li>
+              <li><%= link_to "Edit Profile", '#' %></li>
+              <li class="divider"></li>
+              <li><%= link_to "Logout", logout_path %></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</header>

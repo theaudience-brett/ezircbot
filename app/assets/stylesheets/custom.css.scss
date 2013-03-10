@@ -1,1 +1,24 @@
+@import "bootswatch/cerulean/variables";
+
 @import "bootstrap";
+
+body {
+  padding-top: 60px;
+}
+
+//@import "bootstrap-responsive";
+
+@import "bootswatch/cerulean/bootswatch";
+
+.padding-medium {
+  padding: 15px;
+}
+
+.leftshift-medium {
+  margin-left: -20px;
+}
+
+.shadow-box {
+  box-shadow: 3px 3px 12px 0px #888;
+  border-radius: 20px;
+}
