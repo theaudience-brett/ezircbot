@@ -18,10 +18,10 @@ describe User do
       expect(FactoryGirl.build(:user, password: nil)).to_not be_valid
     end
     it "is invalid unless password and password_confirm match" do
-      expect(FactoryGirl.build(:user, password_confirm: "mypass")).to_not be_valid
+      expect(FactoryGirl.build(:user, password_confirmation: "mypass")).to_not be_valid
     end
     it "is invalid if password is shorter than 6 characters" do
-      expect(FactoryGirl.build(:user, password: "pass", password_confirm: "pass")).to_not be_valid
+      expect(FactoryGirl.build(:user, password: "pass", password_confirmation: "pass")).to_not be_valid
     end
   end
 end
